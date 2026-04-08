@@ -1,0 +1,33 @@
+:root { /*declaracion de variables globales*/
+    --primary-color: #701130;
+    --secondary-color: #91123a;
+    --accent-color: #ff4c00;
+    --bg-light: #f9f9f9;
+    --border-color: #ddd;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+header {
+    background-color: var(--white);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.logo-dot-pe {
+    color: #d43d33;
+
+}
+.app-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
