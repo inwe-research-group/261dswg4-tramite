@@ -48,3 +48,12 @@ body {
     background-color: var(--bg-light);
     color: var(--text-dark);
 }
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: var(--white);
+    padding: 40px;    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    min-height: 400px;
+}
