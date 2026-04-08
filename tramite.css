@@ -40,3 +40,11 @@ header {
     padding: 20px;
     border-top: 1px solid #eee;
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
