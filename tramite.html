@@ -192,17 +192,39 @@
                     <button class="btn btn-primary" onclick="alert('Documento registrado con exito')">Finalizar Registro</button>
                 </div>
             </div>
-
         </section>
 
     </div>
-
 
     <footer class="main-footer">
         &copy; 2026 Registro Nacional de Indentificacion y Estado Civil - RENIEC
     </footer>
 
-
+     <!--Modal Terminos y Condiciones-->
+     <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Terminos y Condiciones</h3>
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="terms-text">
+                    <p>Mediante Resolución Jefatural N° 000147-2020/JNAC/RENIEC (23SET2020) se implementa la Mesa de Partes Virtual del RENIEC, para que los ciudadanos, personas jurídicas públicas y privadas puedan presentar sus formatos y documentos electrónicos para inicio de los procedimientos administrativos y registrales las 24 horas del día y durante los 365 días del año, conforme a las disposiciones del Texto Único de la Ley N° 27444, Ley N° 31170, Decreto Legislativo N° 1412 y al Modelo de Gestión Documental del RENIEC.</p>
+                    <p>Los formatos pueden ser descargados en la parte superior derecha de la Mesa de Partes Virtual. Estos formatos, comunicaciones de entidades o los documentos electrónicos que se presenten, deberán contener todos los datos de identificación de quien los suscriba; además deben estar firmados ya sea con una simple firma electrónica escaneada o una firma digital que utilice certificados digitales vigentes. Es indispensable que se deje un espacio o margen mínimo de 10 centímetros al final del documento, libre de texto o imagen, puesto que en dicho espacio se incluirá el sello de recepción y la firma digital del personal de Mesa de Partes del RENIEC.</p>
+                    <p>El ciudadano o presentante del documento de manera obligatoria debe consignar una dirección de correo electrónico donde será comunicada el acuse de la presentación del documento.</p>
+                    <p>Antes de iniciar un trámite en esta plataforma, le recomendamos los instructivos y la información sobre los procedimientos cargados en la mesa de partes virtual. Asimismo, revisar previamente los requisitos de nuestro Texto Único de Procedimientos Administrativos - TUPA en la web: <a href="https://www.reniec.gob.pe" target="_blank" class="link-primary">www.reniec.gob.pe</a>.</p>
+                    <p>En el caso que la pretensión solicitada en el documento electrónico, adolezca de algún vicio o no cumpla con los requisitos de formalidad no podrá ser atendido y será informado al solicitante al correo electrónico registrado, invitándole a subsanar la observación en el plazo de dos días hábiles; debiendo ingresar un nuevo registro cargando el documento original y los anexos de corresponder; una vez vencido el plazo el documento se considera no presentado.</p>
+                    <p>Una vez culminado el procedimiento de registro de su formato o documento electrónico se remitirá el cargo de la presentación de su documento al correo registrado. En la opción mis documentos de la Mesa de Partes Virtual, a la cual se accede validando los datos de la persona que presenta el documento, podrá ver el número de trámite y de registro asignado en nuestro Sistema de Gestión Documental, asimismo podrá hacer seguimiento del trámite verificando el área competente en la que se encuentra y se atienda su trámite y el último documento emitido.</p>
+                    <p>La atención de los documentos electrónicos se contabiliza a partir del primer día hábil siguiente de haber sido presentados. Los documentos ingresados entre las 00:00 horas y las 23:59 horas de un día hábil, se consideran presentados el mismo día hábil. Los documentos presentados los sábados, domingos y feriados o cualquier otro día inhábil, se consideran presentados al primer día hábil siguiente.</p>
+                    <p>Con la aceptación de los TÉRMINOS Y CONDICIONES, se autoriza expresamente al RENIEC para efectuar la notificación de actos administrativos y/o de cualquier otra comunicación que se emita en los procedimientos administrativos que se inicien en el portal institucional, a la dirección de correo electrónico proporcionada por el administrado.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="declineTerms()">X No Acepto</button>
+                <button class="btn btn-primary" onclick="acceptTerms()">Acepto -></button>
+            </div>
+        </div>
+     </div>
     <script src="tramite.js"></script>    
 </body>
 </html>
