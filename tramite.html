@@ -90,7 +90,7 @@
             </div>
         </section>
         <!--Screen 4: Mis Documentos (Inbox)-->
-        <section id="screen-inbox" class="screen active">
+        <section id="screen-inbox" class="screen">
             <h2>Bandeja de mis documentos tramitados</h2>
             <div class="inbox-filters">
                 <div class="form-group form-group-no-margin">
@@ -138,6 +138,60 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <!--Screen 5: Registro de Documentos (Multi-step)-->
+        <section id="screen-registration" class="screen active">
+            <h2>Nuevo Registro de Documento</h2>
+            <div class="progress-bar">
+                <div class="step active" id="step1-header">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Datos del Ciudadano</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step" id="step2-header">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Datos del Documento</div>
+                </div>
+            </div>
+            <div id="step1-content">
+                <h3>Datos del Ciudadano</h3>
+                <div class="form-group">
+                    <label>Correo Electronico</label>
+                    <input type="text" value="zoraida@gmail.com" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" value="987987987">
+                </div>
+                <div class="flex-end mt-20">
+                    <button class="btn btn-primary" onclick="nextStep(2)">Siguiente</button>
+                </div>
+            </div>
+
+            <div class="step2-content" class="hidden">
+                <h3>Datos del Documento</h3>
+                <div class="form-group">
+                    <label>Tipo de Documento</label>
+                    <select>
+                        <option>CARTA</option>
+                        <option>SOLICITUD</option>
+                        <option>OFICIO</option>
+                        <option>OTRO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Asunto del Documento</label>
+                    <input type="text" placeholder="Ingrese el asunto">
+                </div>
+                <div class="form-group">
+                    <label>Archivo Principal</label>
+                    <input type="file">
+                </div>
+                <div class="flex-end mt-20">
+                    <button class="btn btn-secondary" onclick="nextStep(1)">Atras</button>
+                    <button class="btn btn-primary" onclick="alert('Documento registrado con exito')">Finalizar Registro</button>
+                </div>
+            </div>
 
         </section>
 
