@@ -172,3 +172,38 @@ input[type="text"],input[type="date"],select {
     margin-bottom: 15px;
 }
 
+.inbox-filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.form-group-no-margin {
+    margin: 0;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+.btn-accent:hover {
+    filter: brightness(1.1);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th,td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #f2f2f2;
+    color: var(--primary-color);
+}
